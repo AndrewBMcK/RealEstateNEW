@@ -1,0 +1,167 @@
+/*global*/
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+}
+h1 {
+    font-size: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*utilities*/
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-details {
+    display: block;
+    background-color: orange;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.font1 {
+    font-weight: 100;
+}
+
+.font2 {
+    font-weight: 400;
+}
+
+.font3 {
+    font-weight: 500;
+}
+/*header*/
+
+header.site-init {
+    background-image: url(../img/header.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+header.site-init p {
+    position: absolute;
+    bottom: 5%;
+    left: 1.5%;
+    margin: 0; /*To ensure that it stays flush to the button*/
+    padding: 0px; /*give space from the edge*/
+    font-size: 18px;
+}
+
+header.site-init div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav a{
+    margin-right: 15px;
+}
+
+/*more about us*/
+.more-about-item {
+    margin-right: 2rem;
+    text-align: justify;
+}
+.more-about-item img {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+}
+.more-about-item h3 {
+    color: black;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.more-about-item p {
+    color: black;
+}
+
+.more-about-us {
+    display: flex;
+    justify-content: center;
+    justify-items: left;
+    margin-top: 20px;
+}
+
+.more-about-us-item {
+    margin-right: 10px;
+}
+
+.more-about-us-h2 {
+    margin-top: 20px;
+}
+
+/*houses*/
+
+.houses-item {
+    background-color: lightgray;
+    width: 350px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.houses-item-text {
+    padding: 30px;
+}
+.houses-item h3 {
+    margin: 10px 0;
+}
+
+.houses-item p.price {
+    color: green;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.houses-h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.houses-displaybox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.houses-item ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.houses-item li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
