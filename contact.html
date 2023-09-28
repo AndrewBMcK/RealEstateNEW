@@ -14,6 +14,7 @@
         <div>
             <h1>Real Estate</h1>
             <nav>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="blog.html">Blog</a>
                 <a href="contact.html">Contact</a>
@@ -21,18 +22,64 @@
         </div>    
     </header>
 
-    <main class="container">
+    <main class="container font3">
         <h2>Contact</h2>
         <fieldset>
             <legend>Personal Information</legend>
             <div class="form-container">
-                <label>Name:</label>
+                <label>NAME:</label>
                 <input type="text">
             </div>
             <div class="form-container">
-                <label>Email:</label>
+                <label>EMAIL:</label>
                 <input type="email">
             </div>
+            <div class="form-container">
+                <label>PHONE NUMBER:</label>
+                <input type="tel">
+            </div>
+            <div class="form-container">
+                <label>MESSAGE:</label>
+                <input type="textarea">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Product Information</legend>
+            <div  class="form-container">
+                <label for="type">TYPE:</label>
+
+                <select name="type" id="type">
+                    <option value="">--Select an option--</option>
+                    <option value="placeholder">Placeholder</option>
+                    <option value="placeholder">Placeholder</option>
+                    <option value="placeholder">Placeholder</option>
+                    <option value="placeholder">Placeholder</option>
+                    <option value="placeholder">Placeholder</option>
+                    <option value="placeholder">Placeholder</option>
+                </select>
+
+                <label>NUMBER:</label>
+                <input type="number" min="0" max="100">
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Contact information</legend>
+            <div>
+                <label for="phone" class="custom-buttons">PHONE:</label>
+                <input type="radio" id="phone" name="phone" value="P">
+                <label for="email"  class="custom-buttons">EMAIL:</label>
+                <input type="radio" id="email" name="email" value="E">
+            </div>
+            <div class="form-container">
+                <label for="date">DATE:</label>
+                <input type="date">
+            </div>
+            <div class="form-container">
+                <label for="hour">HOUR:</label>
+                <input type="time">
+            </div>    
         </fieldset>
     </main>
 
