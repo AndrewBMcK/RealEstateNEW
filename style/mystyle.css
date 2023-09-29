@@ -68,6 +68,7 @@ header.site-init {
     background-size: 100% auto;
 }
 
+
 header.site-init p {
     position: absolute;
     bottom: 5%;
@@ -82,10 +83,29 @@ header.site-init div {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    height: 20vh;
 }
+
+@media (max-width:768px) {
+    header.site-init div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 nav a{
     margin-right: 15px;
 }
+
+@media (max-width:768px) {
+    nav {
+        text-align: center;
+        flex-direction: column;
+        justify-items: center;
+    }
+}
+
 
 /*more about us*/
 .more-about-item {
@@ -102,6 +122,8 @@ nav a{
     font-size: 20px;
     margin: 20px 0;
 }
+
+
 .more-about-item p {
     color: black;
 }
@@ -111,6 +133,22 @@ nav a{
     justify-content: center;
     justify-items: left;
     margin-top: 20px;
+    flex-direction: row;
+}
+
+@media (max-width:768px) {
+    .more-about-us {
+        flex-direction: column;
+    }
+    .container {
+        width: 90%;
+    }
+    .more-about-item h3 {
+        text-align: center;
+    }
+    .more-about-item p {
+        text-align: center;
+    }
 }
 
 .more-about-us-item {
@@ -125,7 +163,6 @@ nav a{
 
 .houses-item {
     background-color: lightgray;
-    width: 350px;
     margin: 10px;
     border: 1px solid black;
 }
@@ -150,7 +187,8 @@ nav a{
 
 .houses-displaybox {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .houses-item ul {
@@ -166,6 +204,12 @@ nav a{
     margin-bottom: 20px;
 }
 
+@media (max-width:768px) {
+    .houses-displaybox {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 /*contact*/
 
 .site-header {
