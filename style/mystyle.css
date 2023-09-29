@@ -193,3 +193,8 @@ nav a{
     margin-right: 50px;
     padding: 10px;
 }
+
+.font2custom {
+    font-weight: 400;
+    font-size: 13px;
+}
